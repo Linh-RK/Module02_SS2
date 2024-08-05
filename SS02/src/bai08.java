@@ -17,7 +17,7 @@ public class bai08 {
                 return;
             } else {
                 System.out.println("Moi ban nhap so n");
-                int n = input.nextInt();
+                int n = Integer.parseInt(input.nextLine());
                 switch (choice) {
                     case 1:
                         if (n % 2 == 0)

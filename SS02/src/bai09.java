@@ -14,32 +14,32 @@ public class bai09 {
                     2. Tính chu vi và diện tích hình tam giác
                     3. Tính chu vi và diện tích hình tròn.
                     4. Thoát""");
-            choice = sc.nextInt();
+            choice = Integer.parseInt(sc.nextLine());
             switch (choice) {
                 case 1:
                     System.out.println("Nhap do dai canh a");
-                    int a = sc.nextInt();
+                    int a = Integer.parseInt(sc.nextLine());
                     System.out.println("Nhap do dai canh b");
-                    int b = sc.nextInt();
+                    int b = Integer.parseInt(sc.nextLine());
                     C = (a + b) * 2;
                     S = a * b;
                     break;
                 case 2:
                     System.out.println("Nhap do dai canh x");
-                    int x = sc.nextInt();
+                    int x = Integer.parseInt(sc.nextLine());
                     System.out.println("Nhap do dai canh y");
-                    int y = sc.nextInt();
+                    int y = Integer.parseInt(sc.nextLine());
                     int z;
                     do {
                         System.out.println("Nhap do dai canh z");
-                        z = sc.nextInt();
+                        z = Integer.parseInt(sc.nextLine());
                     } while (z <= x + y);
                     C = x + y + z;
                     S = (double) Math.sqrt(C*(C-x)*(C-y)*(C-z));
                     break;
                 case 3:
                     System.out.println("Nhap ban kinh r: ");
-                    double r = sc.nextInt();
+                    double r = Integer.parseInt(sc.nextLine());
                     C = (double)(2*Math.PI*r);
                     S = (double)(Math.PI*r*r);
                     break;

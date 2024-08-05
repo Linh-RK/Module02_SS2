@@ -4,7 +4,7 @@ public class bai1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Mời bạn nhập 1 số từ 0-9: ");
-        int n = sc.nextInt();
+        int n = Integer.parseInt(sc.nextLine()); ;
         switch(n){
             case 0:
                 System.out.println("Số không");

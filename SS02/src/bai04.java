@@ -9,15 +9,15 @@ public class bai04 {
 //        9 < = điểm TB Xếp loại xuất sắc
         Scanner sc = new Scanner(System.in);
         System.out.println("Moi nhap diem toan:");
-        float toan = sc.nextFloat();
+        float toan = Integer.parseInt(sc.nextLine());
         System.out.println("Moi nhap diem ly:");
-        float ly = sc.nextFloat();
+        float ly = Integer.parseInt(sc.nextLine());
         System.out.println("Moi nhap diem hoa:");
-        float hoa = sc.nextFloat();
+        float hoa = Integer.parseInt(sc.nextLine());
         System.out.println("Moi nhap diem van:");
-        float van = sc.nextFloat();
+        float van = Integer.parseInt(sc.nextLine());
         System.out.println("Moi nhap diem anh:");
-        float anh = sc.nextFloat();
+        float anh = Integer.parseInt(sc.nextLine());
         float diemTrungBinh = (toan + ly + hoa + van + anh)/ 5;
         if (diemTrungBinh >= 9) {
             System.out.println("Xếp loại xuất sắc");

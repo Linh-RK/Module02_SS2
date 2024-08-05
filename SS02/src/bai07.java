@@ -10,13 +10,11 @@ public class bai07 {
 //        Giá trị của N tăng lên 1 để kiểm tra số tiếp theo
     Scanner in = new Scanner(System.in);
         System.out.println("Moi ban nhap so so nguyen to can lay");
-    int n = in.nextInt();
-    int count = 1;  // Initialize counter for divisibility checks
+    int n = Integer.parseInt(in.nextLine());;
+    int count = 1;
     int N = 2;
 
-    // Iterate from 1 up to 'num' to identify prime numbers
     while (count <= n) {
-
         boolean flag = true;
         for (int i = 2; i < N; i++) {
         if (N%i==0) {
